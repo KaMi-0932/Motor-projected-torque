@@ -108,9 +108,6 @@ class Motor
    */
   virtual const Feedback& GetFeedback() = 0;
 
-  /// Convert raw feedback torque to the positive direction of feedback velocity.
-  virtual float GetFeedbackTorquePolarity() const { return 1.0f; }
-
   /**
    * @brief 下发控制命令。
    *        Send a control command.
